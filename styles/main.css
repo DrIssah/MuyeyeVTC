@@ -1,3 +1,19 @@
+body{
+    
+    background-image:url(../res/background/back-three.jpg);
+    background-size: cover;
+}
+
+.container{
+    
+    background-color: whitesmoke;
+}
+
+.container-fluid{
+    
+    background-color: whitesmoke;
+}
+
 .logo{
     
     
@@ -34,14 +50,11 @@
     float: left;
 }
 
-.carousel{
-    
-   
-}
+
 
 .carousel img{
     
-    height: 70%;
+    height: 80%;
     width: 100%;
 }
 
@@ -82,9 +95,19 @@
     width: 100%;
     
 }
+
+
+#muyeye{
+    
+    background-image:url(../res/background/back-one.jpg);
+    background-size: cover;
+}
+
+
 #carouselExampleControls{
     
     background-image:url(../res/galerry/back.JPG);
+    background-size: cover;
 }
 
 
