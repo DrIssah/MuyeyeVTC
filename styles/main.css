@@ -1,0 +1,106 @@
+.logo{
+    
+    
+    width: 10%;
+    float: left;
+    height: auto;
+    
+}
+
+.logo img{
+    
+    height: 100%;;
+}
+
+.custheader{
+    
+    width: 100%;
+    height: 15%;
+    margin-bottom: 5px;
+    padding: 1px;
+    
+    
+}
+
+.mynav{
+    
+   float: left;
+    width: 90%;
+    
+}
+
+.nav{
+    
+    float: left;
+}
+
+.carousel{
+    
+   
+}
+
+.carousel img{
+    
+    height: 70%;
+    width: 100%;
+}
+
+.title{
+    
+    width: 100%;
+    float: left;
+}
+
+.container{
+    
+    
+   
+}
+
+#newsHeading{
+    
+    color: darkgreen;
+}
+
+#mainCard{
+    
+    width: 100%;
+    border: 0px;
+    border-top: 1px solid gray;
+    border-radius: 0px;
+}
+
+.footer{
+    
+    height: 50px;
+    background-color: beige;
+}
+
+#bom{
+    
+    height: 50%;
+    width: 100%;
+    
+}
+#carouselExampleControls{
+    
+    background-image:url(../res/galerry/back.JPG);
+}
+
+
+#line {
+   display: flex; 
+   flex-direction: row;
+    font-family: Candara;
+    
+    
+} 
+
+#line:before, 
+        #line:after { 
+            content: ""; 
+            flex: 1 1; 
+            border-bottom: 2px solid #000; 
+            margin: auto;
+            
+        } 
