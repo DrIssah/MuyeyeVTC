@@ -3,7 +3,8 @@ jQuery.noConflict()(function ($) {
 // A $( document ).ready() block.
 $( document ).ready(function() {
     
-   
+    $("#nav-placeholder").load("navbar.html");
+   $("#slideShow").load("slideshow.html");
     animate();
     
     
