@@ -23,8 +23,8 @@ function animate() {
     } else {
       pos = pos + 1; 
      
-      elem.style.marginLeft  = pos + "px";
-      elem.style.opacity  = opac;
+      //elem.style.marginLeft  = pos + "px";
+      //elem.style.opacity  = opac;
     
       
     }
