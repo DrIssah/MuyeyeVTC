@@ -3,7 +3,7 @@ jQuery.noConflict()(function ($) {
 // A $( document ).ready() block.
 $( document ).ready(function() {
     
-   animate();
+   //animate();
     
    $("#nav-placeholder").load("navbar.html");
    $("#slideShow").load("slideshow.html");
@@ -23,12 +23,12 @@ function animate() {
   function frame() {
     if (pos == 400) {
       clearInterval(id);
-      animate();
+     // animate();
     } else {
       pos = pos + 1; 
      
-      elem.style.marginLeft  = pos + "px";
-      elem.style.opacity  = opac;
+      //elem.style.marginLeft  = pos + "px";
+      //elem.style.opacity  = opac;
     
       
     }

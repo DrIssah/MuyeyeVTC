@@ -1,6 +1,9 @@
 body{
     
     background-color: aliceblue;
+    left: 0px;
+    right: 0px;
+    width: 100%;
 }
 
 .logo{
@@ -22,6 +25,13 @@ body{
     
    
     
+}
+
+.container3{
+    
+    
+    width: 100%;
+    float: left;
 }
 
 .logo img{
@@ -93,6 +103,7 @@ body{
     
     height: 50px;
     background-color: beige;
+    float: left;
 }
 
 #bom{
