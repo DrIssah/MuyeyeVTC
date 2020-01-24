@@ -1,0 +1,187 @@
+<style>
+
+    
+    
+.fa {
+  padding: 5px;
+  font-size: 30px;
+  width: 20%;;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.fa-skype {
+  background: #00aff0;
+  color: white;
+}
+
+.fa-android {
+  background: #a4c639;
+  color: white;
+}
+
+.fa-dribbble {
+  background: #ea4c89;
+  color: white;
+}
+
+.fa-vimeo {
+  background: #45bbff;
+  color: white;
+}
+
+.fa-tumblr {
+  background: #2c4762;
+  color: white;
+}
+
+.fa-vine {
+  background: #00b489;
+  color: white;
+}
+
+.fa-foursquare {
+  background: #45bbff;
+  color: white;
+}
+
+.fa-stumbleupon {
+  background: #eb4924;
+  color: white;
+}
+
+.fa-flickr {
+  background: #f40083;
+  color: white;
+}
+
+.fa-yahoo {
+  background: #430297;
+  color: white;
+}
+
+.fa-soundcloud {
+  background: #ff5500;
+  color: white;
+}
+
+.fa-reddit {
+  background: #ff5700;
+  color: white;
+}
+
+.fa-rss {
+  background: #ff6600;
+  color: white;
+}
+
+
+
+
+</style>
+
+<div class="list-group-flush">
+              <a href="#" class="list-group-item list-group-item-action active">
+               Programmes and Services
+              </a>
+              <a href="#" class="list-group-item list-group-item-action">Exams Offered</a>
+              <a href="#" class="list-group-item list-group-item-action">Nita Programme</a>
+              <a href="#" class="list-group-item list-group-item-action">Courses Offered</a>
+              
+            </div>
+        
+            <div class="list-group-flush">
+              <a href="#" class="list-group-item list-group-item-action active">
+               Downloads
+              </a>
+              <a href="res/Downloads/ARTISAN_FEES_STRUCTURE_2019-2020.pdf" class="list-group-item list-group-item-action" download>Artisan Level Registration Forms</a>
+                
+             <a href="res/Downloads/CRAFT_FEES_STRUCTURE_2019-2020.pdf" class="list-group-item list-group-item-action" download>Craft Level Registration Forms</a>
+                
+              <a href="#" id="Tender" class="list-group-item list-group-item-action">Tenders</a>
+                
+              <div style="display: none" id="Tendersdialog" title="Muyeye VTC Tender Box">
+                  
+                      <p>Thank you for reaching us, Our Tender Box is Currently Empty,<br/>
+                      Once Tenders are available you will be able to get Forms. Thank You</p>
+                    </div>
+            </div>
+        
+             <div class="list-group-flush">
+              <a href="#" class="list-group-item list-group-item-action active">
+               Visit Our Social..
+              </a>
+              <a href="#" class="list-group-item list-group-item-action"><i class="fa fa-facebook"></i>FaceBook</a>
+              <a href="#" class="list-group-item list-group-item-action"><i class="fa fa-twitter"></i>Twitter</a>
+              <a href="#" class="list-group-item list-group-item-action"><i class="fa fa-instagram"></i>Instagram</a>
+              
+              </div>
+
+<script>
+jQuery.noConflict()(function ($) { 
+ $('#Tender').click(function() {
+       
+         //Tendersdialog
+        $("#Tendersdialog").dialog(
+            
+            { 
+              width: 300,
+              height: 300,
+              modal: true,
+              position: { at: "centre top" },
+              show:"slideDown",
+              hide:{ effect: 'explode', delay: 250, duration: 1000, easing: 'easeInQuad'}
+            }
+        
+        );
+         return false;
+});
+});
+
+</script>

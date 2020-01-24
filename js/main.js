@@ -2,40 +2,28 @@
 jQuery.noConflict()(function ($) { 
 // A $( document ).ready() block.
 $( document ).ready(function() {
-    
-   //animate();
-    
+   
    $("#nav-placeholder").load("navbar.html");
    $("#slideShow").load("slideshow.html");
+  $("#sideBar").load("sideBar.html");
     
-    
-    
-    
-function animate() {
-  var elem = document.getElementById("para");   
-  var pos = 0;
-  var opac = 1;
-  var id = setInterval(frame, 50);
-  var paraWidth = $( "#para" ).width();
-  var holderWidth = $( "#holder" ).width();
-    
-  console.log( "Parawidth" + paraWidth);
-  function frame() {
-    if (pos == 400) {
-      clearInterval(id);
-     // animate();
-    } else {
-      pos = pos + 1; 
-     
-      //elem.style.marginLeft  = pos + "px";
-      //elem.style.opacity  = opac;
-    
-      
-    }
-  }
-}
-    
-    
+    $('#Tender').click(function() {
+       
+         //Tendersdialog
+        $("#Tendersdialog").dialog(
+            
+            { 
+              width: 300,
+              height: 300,
+              modal: true,
+              position: { at: "centre top" },
+              show:"slideDown",
+              hide:{ effect: 'explode', delay: 250, duration: 1000, easing: 'easeInQuad'}
+            }
+        
+        );
+         return false;
+    });
     
     
 });

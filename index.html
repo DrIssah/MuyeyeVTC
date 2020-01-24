@@ -3,21 +3,58 @@
  <meta name="viewport" content="width=device-width, initial-scale=1">
  <link rel="icon" href="res/logo.png"> 
  <title>Home</title> 
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.9.2/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.9.2/themes/smoothness/jquery-ui.css" />
+
+    
+
     <!-- bootstrap css-->
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     
 <!-- Local css -->
     <link rel="stylesheet" href="styles/main.css">
     <script src="js/main.js"></script>
  <meta name="google-site-verification" content="qHrOKOJF6FlhFjL82WuWwhv3qypuyfMVb-Khj6fvN88" />
+    
+<style>
+ 
+/**************To Top Button*****/
+#top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: forestgreen;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50%;
+}
+
+#top:hover {
+  background-color: #555;
+}
+/*************************/
+
+
+</style>
 </head>
     
 <body>
+    
+ <button onclick="topFunction()" id="top" title="Go to top">Top</button>
     
 <div class="container-fluid"> 
     
@@ -45,7 +82,9 @@
 </div>   
 
     
-<div class="container3">  
+<div class="container3"> 
+    
+   
     
 <div class="container">
     
@@ -62,7 +101,8 @@
     </div>
 </div>
     
-<div class="row">
+<div class="row"> <!-- start side bar -->
+    
     <div class="col-sm-3">
         
           
@@ -153,38 +193,14 @@
     </div>
       
       
-    <div class="col-sm-3">
-            <div class="list-group-flush">
-              <a href="#" class="list-group-item list-group-item-action active">
-               Programmes and Services
-              </a>
-              <a href="#" class="list-group-item list-group-item-action">Exams Offered</a>
-              <a href="#" class="list-group-item list-group-item-action">Nita Programme</a>
-              <a href="#" class="list-group-item list-group-item-action">Courses Offered</a>
-              <a href="#" class="list-group-item list-group-item-action disabled">CAP</a>
-            </div>
+    <div class="col-sm-3" id="sideBar">
         
-            <div class="list-group-flush">
-              <a href="#" class="list-group-item list-group-item-action active">
-               Downloads
-              </a>
-              <a href="#" class="list-group-item list-group-item-action">Registration Forms</a>
-              <a href="#" class="list-group-item list-group-item-action">Tenders</a>
-              <a href="#" class="list-group-item list-group-item-action">KNEC</a>
-              
-            </div>
+            <!--Data Loaded by jaquery -->
         
-             <div class="list-group-flush">
-              <a href="#" class="list-group-item list-group-item-action active">
-               Visit Our Social..
-              </a>
-              <a href="#" class="list-group-item list-group-item-action"><i class="fa fa-facebook-square"></i>FaceBook</a>
-              <a href="#" class="list-group-item list-group-item-action">Tenders</a>
-              <a href="#" class="list-group-item list-group-item-action">KNEC</a>
-              
-            </div>
+        
     </div>
-  </div>
+    
+  </div><!-- end side bar -->
 
     
 <div class="raw">
@@ -459,6 +475,28 @@
     
     
 </div>
+    
+<script>
+//Get the button
+var mybutton = document.getElementById("top");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
     
 
     

@@ -104,7 +104,6 @@ body{
     height: 50px;
     background-color: beige;
     float: left;
-    width:100%;
 }
 
 #bom{
@@ -158,6 +157,7 @@ body{
     padding: 10px;
     border-radius: 10px;
 }
+
 
 
 @media (min-width: 481px) and (max-width: 767px) {
